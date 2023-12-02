@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>City Weather</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style> 
+        .form-center {
+            display:grid;
+            justify-content: center;
+        }   
+    </style>
+</head>
+<body>
+    <h2 class="form-center">
+        City Weather
+    </h2>
+    <div class="form-center">
+        <form action="/getWeather" method="post">
+            <label>City</label>
+            <input type="text" name="city" placeholder="Enter city names"><br><br>
+            <label>Put space between each city</label><br><br>
+            <input type="Submit">
+          </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    table {
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: 3px solid purple;
+        margin: 0 auto; 
+    }
+        
+    tbody td {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }   
+</style>
+</head>
+<body>
+    <h2> Weather of Cities </h2>
+    <table>
+        <tr>
+          <th>City</th>
+          <th>Temperature</th>
+        </tr>
+        <% weatherData.forEach((city)=> { %>
+
+        <tr>
+            <td><%= city["city"] %></td>
+            <td><%= city["temp"] %></td>
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
